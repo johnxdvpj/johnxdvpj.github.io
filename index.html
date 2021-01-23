@@ -1,48 +1,47 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ray-Ban Landing Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/ysw0xtg.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>A Musical 3D Shooter Game</h1><br>
+    </div>
+    <div class="down-button">
+      <p>Scroll down</p>
+      <i class="bi bi-chevron-double-down"></i>
+    </div>
 
-<!--
-     HTML code used with Epic Games HTML5 projects
+    <div id="section1" class="container-fluid center" >
+      <iframe width="80%" src="https://www.youtube.com/embed/fhFMLmbNvYU" class="myframe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
-     much of this is for UE4 development purposes.
+    <div id="section2" class="container-fluid">
+      <div class="header2">
+        <h1>Wanno try out by yourself</h1><br>
+      </div>
+      <div class="down-button center">
+        <div class="button">
+          <a href="https://drive.google.com/file/d/1ieCvXc1cupBEAaWlnCwT0bGtNg4rw9Pw/view?usp=sharing">Download Windows</a>
+        </div>
+      </div>
+    </div>
 
-     to create a custom HTML file for your project:
-     - make a copy of this file - or make one from scratch
-     - and put it in: "your project folder"/Build/HTML/GameX.html.template
--->
 
-<html lang="en">
-<head>
-	<title>FPS_Prototype</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 
-	<link href="FPS_Prototype.css" rel="stylesheet">
-</head>
-<body>
-
-<div class="wrapper" id="mainarea">
-	<div class="alert alert-warning centered-axis-xy" style="min-height: 20px; display:none;" role="alert" id="compilingmessage">
-		<div id='loadTasks'> </div>
-	</div>
-	<!-- The "tabindex=0" specifier on the canvas is important to allow it to capture keyboard focus when clicking on it with a mouse -->
-	<canvas tabindex=0 id="canvas" class="emscripten" oncontextmenu="event.preventDefault()" style="display:none;">
-</div>
-<div class="row buttonarea text-center" id="buttonrow">
-	<div class="col-sm-2 text-center"></div>
-	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="try { Module['pauseMainLoop'](); } catch(e) {console.error(e);}">Pause</button></div>
-	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="try { Module['resumeMainLoop'](); } catch(e) {console.error(e);}">Resume</button></div>
-	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="var w = document.getElementById('logwindow'); w.style.display = w.style.display ? '' : 'none';">Toggle Log</button></div>
-	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" id='clear_indexeddb' onclick="try { deleteIndexedDBStorage(); } catch(e) {console.error(e);}">Clear IndexedDB</button></div>
-	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" id="fullscreen_request">FullScreen</button></div>
-	<div class="col-sm-2 text-center"></div>
-	<div class="col-sm-2 text-center"></div>
-</div>
-<div class="texthalf text-normal jumbotron " id="logwindow" style='display:none'></div>
-
-<script src="FPS_Prototype.UE4.js"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
+    <script>AOS.init();</script>
+  </body>
 </html>
