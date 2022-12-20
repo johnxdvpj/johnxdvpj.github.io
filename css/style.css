@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important; }
+
+body {
+  color: #333333;
+  margin: 0;
+  display: table;
+  width: 100%;
+  background-color: #FDFAF7;
+  font-size: 1.1em; }
+
+.header {
+  z-index: 1000;
+  width: 100%;
+  height: 6em;
+  position: absolute;
+  left: 0;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  color: #aaaaaa; }
+  .header .navi div {
+    text-align: end; }
+    .header .navi div span {
+      padding: 0 5px;
+      cursor: pointer;
+      transition: 0.3s; }
+      .header .navi div span:hover {
+        color: #333; }
+    .header .navi div .active {
+      color: #333; }
+  .header .navi .title {
+    text-align: left;
+    font-size: 1.25em;
+    color: #333; }
+
+.section1 {
+  height: 100vh;
+  padding: 0;
+  width: 100%;
+  color: #333;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s ease-in; }
+  .section1 .top {
+    height: 90%;
+    padding-top: 7%; }
+    .section1 .top .img-container {
+      text-align: end;
+      padding-right: 1.5em;
+      height: 80%; }
+      .section1 .top .img-container img {
+        width: auto;
+        height: 100%; }
+    .section1 .top .namintro {
+      height: 80%;
+      padding: 0 5%; }
+      .section1 .top .namintro .name {
+        font-size: 1.5em; }
+      .section1 .top .namintro .intro {
+        font-size: 1.1em;
+        padding-top: 2em;
+        line-height: 1.5em;
+        width: 70%; }
+
+.section2 {
+  position: absolute;
+  left: -200%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 7%;
+  background-color: #FDFAF7;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); }
+  .section2 .work-navi {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px; }
+    .section2 .work-navi span {
+      font-weight: bold;
+      margin-left: 5px;
+      color: #aaa;
+      cursor: pointer; }
+      .section2 .work-navi span:hover {
+        color: #333;
+        border-bottom: 2px solid #333; }
+    .section2 .work-navi .active {
+      color: #333;
+      border-bottom: 2px solid #333; }
+  .section2 .work-container {
+    margin-top: 10px; }
+    .section2 .work-container div .overlay {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: #333;
+      transition: .5s ease;
+      opacity: 0;
+      color: #FDFAF7;
+      padding: 1.5em; }
+      .section2 .work-container div .overlay:hover {
+        opacity: 0.7; }
+      .section2 .work-container div .overlay h3 {
+        font-size: 0.9em;
+        margin-bottom: 1em; }
+      .section2 .work-container div .overlay p {
+        font-size: 0.8em; }
+    .section2 .work-container .shooter {
+      background-image: url("../img/3dShooter.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .towerdefense {
+      background-image: url("../img/TowerDefense.jpg");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .studistutti {
+      background-image: url("../img/studistutt.JPG");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .codi {
+      background-image: url("../img/Startseite.png");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .hesem {
+      background-image: url("../img/HESEM/HESEM5.PNG");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .maulwurf {
+      background-image: url("../img/maulwurf.PNG");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .conica {
+      background-image: url("../img/Mosaiq/Conica.PNG");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .erling {
+      background-image: url("../img/Mosaiq/Erling1.PNG");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+    .section2 .work-container .ssb {
+      background-image: url("../img/Mosaiq/SSB.PNG");
+      background-repeat: no-repeat;
+      background-size: auto 100%; }
+  .section2 .game-container {
+    display: block;
+    height: 260px; }
+  .section2 .web-container {
+    display: block;
+    height: 260px; }
+
+.section3 {
+  position: absolute;
+  left: -200%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 7%;
+  background-color: #FDFAF7;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); }
+  .section3 .contact-container {
+    width: 60%;
+    margin: 0 auto; }
+    .section3 .contact-container h1 {
+      font-size: 2.5em;
+      margin-bottom: 7%; }
+
+.description {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 7%;
+  background-color: #FDFAF7;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); }
+  .description .filler {
+    width: 80%;
+    margin: 0 auto 5% auto; }
+    .description .filler .content .intro {
+      width: 80%;
+      margin: 0 auto;
+      line-height: 2em; }
+      .description .filler .content .intro img {
+        width: 100%;
+        margin: 5% 0; }
+      .description .filler .content .intro h3 {
+        font-size: 1.5em; }
+      .description .filler .content .intro .contained_text {
+        margin: 0 5%; }
+      .description .filler .content .intro .berserk {
+        width: 80%; }
+    .description .filler h2 {
+      font-size: 2em;
+      margin-bottom: 5%; }
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .work-container .game-container {
+    height: 220px; }
+  .work-container .web-container {
+    height: 220px; }
+
+  .section3 {
+    padding-top: 10%; } }
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .section1 .top {
+    padding-top: 10%; }
+    .section1 .top .img-container img {
+      width: auto;
+      height: 80%; }
+    .section1 .top .namintro .name {
+      font-size: 1.2em; }
+    .section1 .top .namintro .intro {
+      padding-top: 2em; }
+
+  .section2 {
+    padding-top: 10%; }
+
+  .work-container .game-container {
+    height: 165px; }
+  .work-container .web-container {
+    height: 165px; }
+
+  .section3 {
+    padding-top: 10%; }
+
+  .description {
+    padding-top: 10%; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section1 .top {
+    padding-top: 10%; }
+    .section1 .top .img-container img {
+      width: auto;
+      height: 70%; }
+    .section1 .top .namintro .name {
+      font-size: 0.8em; }
+    .section1 .top .namintro .intro {
+      font-size: 1em;
+      padding-top: 2em; }
+
+  .section2 {
+    padding-top: 10%; }
+
+  .work-container .game-container {
+    height: 175px; }
+  .work-container .web-container {
+    height: 175px; }
+
+  .section3 {
+    padding-top: 15%; }
+
+  .description {
+    padding-top: 15%; }
+    .description .filler .content .intro {
+      width: 100%; } }
+@media (min-width: 481px) and (max-width: 767px) {
+  .section1 .top {
+    padding-top: 25%; }
+    .section1 .top .img-container {
+      text-align: center;
+      padding-right: 0; }
+      .section1 .top .img-container img {
+        width: auto;
+        height: 90%; }
+    .section1 .top .namintro {
+      height: 400px; }
+      .section1 .top .namintro .name {
+        font-size: 0.6em; }
+      .section1 .top .namintro .intro {
+        font-size: 1em;
+        padding-top: 2em; }
+
+  .section2 {
+    padding-top: 20%; }
+
+  .work-container .game-container {
+    height: 195px; }
+  .work-container .web-container {
+    height: 195px; }
+
+  .section3 {
+    padding-top: 20%; }
+
+  .description {
+    padding-top: 18%; }
+    .description .filler h2 {
+      font-size: 1.5em; }
+    .description .filler .content .intro {
+      width: 100%; } }
+@media (max-width: 480px) {
+  .section1 .top {
+    padding-top: 25%; }
+    .section1 .top .img-container {
+      text-align: center;
+      padding-right: 0; }
+      .section1 .top .img-container img {
+        width: auto;
+        height: 90%; }
+    .section1 .top .namintro {
+      height: 300px; }
+      .section1 .top .namintro .name {
+        font-size: 0.6em; }
+      .section1 .top .namintro .intro {
+        font-size: 1em;
+        padding-top: 2em; }
+
+  .section2 {
+    padding-top: 25%; }
+
+  .work-container .game-container {
+    height: 215px; }
+  .work-container .web-container {
+    height: 215px; }
+
+  .section3 {
+    padding-top: 25%;
+    font-size: 0.9em; }
+
+  .description {
+    padding-top: 20%;
+    font-size: 0.9em; }
+    .description .filler h2 {
+      font-size: 1.5em; }
+    .description .filler .content .intro {
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
