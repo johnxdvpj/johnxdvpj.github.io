@@ -110,47 +110,49 @@ body {
       .section2 .work-container div .overlay p {
         font-size: 0.8em; }
     .section2 .work-container .shooter {
-      background-image: url("../img/3dShooter.jpg");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/3dShooter.jpg"); }
     .section2 .work-container .towerdefense {
-      background-image: url("../img/TowerDefense.jpg");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/TowerDefense.jpg"); }
     .section2 .work-container .studistutti {
-      background-image: url("../img/studistutt.JPG");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/studistutt.JPG"); }
     .section2 .work-container .codi {
-      background-image: url("../img/Startseite.png");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/Startseite.png"); }
     .section2 .work-container .hesem {
-      background-image: url("../img/HESEM/HESEM5.PNG");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/HESEM/HESEM5.PNG"); }
     .section2 .work-container .maulwurf {
-      background-image: url("../img/maulwurf.PNG");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/maulwurf.PNG"); }
     .section2 .work-container .conica {
-      background-image: url("../img/Mosaiq/Conica.PNG");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/Mosaiq/Conica.PNG"); }
     .section2 .work-container .erling {
-      background-image: url("../img/Mosaiq/Erling1.PNG");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/Mosaiq/Erling1.PNG"); }
     .section2 .work-container .ssb {
-      background-image: url("../img/Mosaiq/SSB.PNG");
-      background-repeat: no-repeat;
-      background-size: auto 100%; }
+      background-image: url("../img/Mosaiq/SSB.PNG"); }
   .section2 .game-container {
     display: block;
-    height: 260px; }
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+    transition: .5s ease;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+    .section2 .game-container:hover {
+      background-size: auto 100%;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1); }
   .section2 .web-container {
     display: block;
-    height: 260px; }
+    height: 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 110%;
+    transition: .5s ease;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0); }
+    .section2 .web-container:hover {
+      background-size: auto 100%;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1); }
 
 .section3 {
   position: absolute;
