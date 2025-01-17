@@ -1,5 +1,5 @@
 <?php
-$myFile = "../json/wedding.json";
+$myFile = "../json/test.json";
 $fh = fopen($myFile, 'w') or die("can't open file");
 $stringData = $_GET["data"];
 fwrite($fh, $stringData);
