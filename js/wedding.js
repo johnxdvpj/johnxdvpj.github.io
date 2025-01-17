@@ -5,7 +5,8 @@ $(document).ready(function () {
         $.ajax({
             url: '../php/save.php', // Server-side script to handle saving 
             type: 'POST',
-            contentType: 'application/json',
+            contentType: 'json',
+            async: false,
             data: JSON.stringify(data),
             success: function (response) {
                 console.log('Data saved successfully:', response);
