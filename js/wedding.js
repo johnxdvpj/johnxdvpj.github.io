@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.getJSON("https://jsonhost.com/json/f21d790128db3973f683655d1e58d6a0", function (data) {
+    $.getJSON("../json/wedding.json", function (data) {
         data[0].user = "Hello"
         console.log(data[0].user);
         $.ajax({
