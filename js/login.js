@@ -1,7 +1,7 @@
 function CheckJson() {
     $.getJSON("../json/wedding.json", function (data) {
         $.each(data, function (key, val) {
-            console.log(data[key.user])
+            console.log(data[key].user)
         });
     });
 };
