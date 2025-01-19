@@ -1,14 +1,1 @@
-[
-    {
-        "user": "Test1",
-        "password": "123",
-        "Zusage": null,
-        "Absage": null
-    },
-    {
-        "user": "Test2",
-        "password": "456",
-        "Zusage": null,
-        "Absage": null
-    }
-]
+[{"user": "1", "password": "123", "Zusage": false}, {"user": "Test2", "password": "456", "Zusage": null}]
