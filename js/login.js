@@ -4,8 +4,9 @@ function CheckJson() {
         var password = $('#password').val();
         $.each(data, function (key, val) {
             console.log(data[key].user)
+
+            console.log(key)
             if (data[key].user == nutzer) {
-                console.log(key)
                 return false;
             }
         });
