@@ -5,7 +5,7 @@ function CheckJson() {
             console.log(data[key].user)
             if (data[key].user == nutzer) {
                 console.log("success")
-                return false
+                return false;
             }
         });
     });
