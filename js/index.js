@@ -6,7 +6,7 @@ $(document).ready(function () {
         jsonData = JSON.stringify(json)
         $.ajax({
             url: './json/save.php',
-            data: { 'userIndex': 0, 'zusage': 0 },
+            data: { 'userIndex': 0, 'zusage': 1 },
             type: 'Get'
         });
     });
