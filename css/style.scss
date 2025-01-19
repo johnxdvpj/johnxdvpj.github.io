@@ -670,6 +670,43 @@ body {
     text-align: center;
 }
 
+.Login_Segment {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/Login_Background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    .input_text_container {
+        .textbox {
+            font-family: "Lexend", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 1.1em;
+            width: 250px;
+            margin-bottom: 10px;
+        }
+
+        .login_button {
+            font-family: "Lexend", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 1.1em;
+            width: 100px;
+            color: #fff;
+            background-color: #dcc3bc;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #d3b4ab;
+            }
+        }
+    }
+}
+
 @media (max-width: 1400px) {
     #segment_03 {
         background-size: auto 100%;
