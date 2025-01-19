@@ -5,9 +5,11 @@ $(document).ready(function () {
         console.log(json[0].user)
         jsonData = JSON.stringify(json)
         $.ajax({
-            url: './json/save.php',
-            data: { 'userIndex': 0, 'zusage': 1 },
-            type: 'Get'
+            type: "GET",
+            dataType: 'json',
+            async: false,
+            url: 'save.php',
+            data: { data: jsonData }
         });
     });
 });
