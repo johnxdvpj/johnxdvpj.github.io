@@ -1,6 +1,6 @@
 function CheckJson() {
     var password = $('#password').val();
-    if (password == "1") {
+    if (password == "Umami2025") {
         $(".Login_Segment").addClass("hide_Login_Segment");
         $("body").css({ "height": "auto", "overflow": "auto" });
     }

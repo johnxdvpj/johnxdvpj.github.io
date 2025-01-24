@@ -1063,9 +1063,21 @@ body {
     .location_container {
         max-width: 540px !important;
     }
+
+    .Login_Segment {
+        background-size: auto 100%;
+        background-position: center;
+    }
 }
 
 @media (max-width: 576px) {
+    #segment_01 {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Beach_Background.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+    }
+
     .WebsiteHeader {
         height: auto;
         padding-bottom: 200px;
