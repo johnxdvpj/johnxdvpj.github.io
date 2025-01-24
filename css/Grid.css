@@ -25,7 +25,13 @@
   .h_col .h_box_col {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; }
+    max-width: 50%;
+    position: relative; }
+
+.l_col {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
 
 .info_col_8 {
   -ms-flex: 0 0 66.666667%;
@@ -70,7 +76,12 @@
   .p_col {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+
+  .l_col {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; } }
 @media (max-width: 576px) {
   .s_col {
     -ms-flex: 0 0 100%;

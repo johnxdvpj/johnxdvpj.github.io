@@ -15,22 +15,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Great+Vibes&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display&family=Uchen&display=swap');
     </style>
 </head>
 
 <body>
+    <div class="Login_Segment">
+        <div class="WebsiteHeader">
+            <h1>Ella & Johnny</h1>
+            <div class="input_text_container">
+                <input class="textbox" type="password" id="password" name="password" placeholder="Passwort" /><br>
+                <input class="login_button" id="login_button" type="button" value="Login" />
+                <p class="Login_Error">Passwort ist falsch</p>
+            </div>
+        </div>
+    </div>
     <div class="menu">
         <div class="whiteLine">
         </div>
-        <a href="#segment_01" class="navlink active" id="click1">Wedding Day</a>
-        <a href="#segment_02" class="navlink" id="click2">Fotogalerie</a>
-        <a href="#segment_03" class="navlink" id="click3">Programm</a>
-        <a href="#segment_04" class="navlink" id="click4">Unterkünfte</a>
-        <a href="#segment_05" class="navlink" id="click5">Gut zu wissen</a>
-        <a href="#segment_06" class="navlink" id="click6">Ansprechpartner</a>
-        <a href="#segment_07" class="navlink" id="click7">FAQs</a>
+        <a href="#segment_01" class="navlink active" id="click1">1</a>
+        <a href="#segment_02" class="navlink" id="click2">2</a>
+        <a href="#segment_03" class="navlink" id="click3">3</a>
+        <a href="#segment_04" class="navlink" id="click4">4</a>
+        <a href="#segment_05" class="navlink" id="click5">5</a>
+        <a href="#segment_06" class="navlink" id="click6">6</a>
+        <a href="#segment_07" class="navlink" id="click7">7</a>
+        <a href="#segment_08" class="navlink" id="click8">8</a>
     </div>
     <div id="segment_01" class="Full_Size">
         <div class="WebsiteHeader">
@@ -175,8 +187,8 @@
                         </div>
                         <h3 class="schedule-header">Trauung</h3>
                         <p class="schedule-time">16:00</p>
-                        <p class="schedule-text">Die Trauung wird am Strand auf dem Gelände des Restarant <br><span>La
-                                Terraza de Mangoa</span> in Torre del Marre stattfinden</p>
+                        <p class="schedule-text">Die Trauung wird am Strand auf dem Gelände des Restaurant <br><span>La
+                                Terraza de Mangoa</span> in Torre del Mar stattfinden</p>
                     </div>
                     <div class="s_col">
                         <div class="img-container">
@@ -185,7 +197,7 @@
                         <h3 class="schedule-header">Shuttle</h3>
                         <p class="schedule-time">17:00</p>
                         <p class="schedule-text">Nach der Trauung geht es weiter zur Hochzeitslocation - natürlich haben
-                            wir uns für den Transport einen Shuttle organiersiert</p>
+                            wir für den Transport einen Shuttle organiersiert</p>
                     </div>
                     <div class="s_col">
                         <div class="img-container">
@@ -193,8 +205,8 @@
                         </div>
                         <h3 class="schedule-header">Cocktail Hour</h3>
                         <p class="schedule-time">17:45</p>
-                        <p class="schedule-text">Bei Ankunft werden für euch diverse Arten von Cocktails angeboten, um
-                            bisschen Stimmung für unser Programm aufgebaut wird</p>
+                        <p class="schedule-text">Bei Ankunft werden euch diverse Arten von Cocktails und Häppchen
+                            angeboten - greift zu!</p>
                     </div>
                     <div class="hide_block"></div>
                     <div class="s_col">
@@ -203,8 +215,8 @@
                         </div>
                         <h3 class="schedule-header">Essen</h3>
                         <p class="schedule-time">19:00</p>
-                        <p class="schedule-text">Nartürlich haben wir für unsere Gästen tolles Essen von unsere Caterer
-                            vom La Terraza de Mangoa organisiert</p>
+                        <p class="schedule-text">Nartürlich haben wir für unsere Gäste tolles Essen von unserem Caterer
+                            organisiert</p>
                     </div>
                     <div class="s_col last_schedule">
                         <div class="img-container">
@@ -212,7 +224,7 @@
                         </div>
                         <h3 class="schedule-header">Party</h3>
                         <p class="schedule-time">21:45</p>
-                        <p class="schedule-text">Um diesen tollen Tag zu beenden heißt es Party</p>
+                        <p class="schedule-text">Feiern bis zum Morgengrauen!</p>
                     </div>
                 </div>
 
@@ -220,7 +232,32 @@
         </div>
     </div>
     </div>
-    <div id="segment_04" class="Full_Size">
+    <div id="segment_04" class="location_Segment">
+        <div class="SegmentHeader">
+            <img class="flower" src="img/Flower.png" width="40px" height="auto">
+            <h1>Locations</h1>
+        </div>
+        <div class="container location_container">
+            <div class="row location_row">
+                <div class="l_col">
+                    <h2>Trauort</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.7542596793755!2d-4.105345222861224!3d36.728462671738086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7247c927f468a9%3A0x50bce06747c5e2da!2sLa%20Terraza%20de%20Mangoa!5e0!3m2!1sde!2sde!4v1737305741237!5m2!1sde!2sde"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="location_map"></iframe>
+                </div>
+                <div class="l_col">
+                    <h2>Hochzeitslocation</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3196.4672314594836!2d-3.833665822860491!3d36.75935726999851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72259d29479273%3A0x3eedcc190b83f317!2sEL%20MOLINO%20DE%20CASANOVA!5e0!3m2!1sde!2sde!4v1737306235704!5m2!1sde!2sde"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="segment_05" class="Full_Size">
         <div class="SegmentHeader">
             <img class="flower" src="img/Flower.png" width="40px" height="auto">
             <h1>Unterkünfte</h1>
@@ -356,7 +393,7 @@
             </div>
         </div>
     </div>
-    <div id="segment_05" class="Full_Size">
+    <div id="segment_06" class="Full_Size">
         <div class="SegmentHeader">
             <img class="flower" src="img/Flower.png" width="40px" height="auto">
             <h1>Gut zu wissen</h1>
@@ -377,8 +414,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Cueva de Nerja</h3>
-                    <p>Die Tropfsteinhöhlen von Nerja gehören zu den beeindruckendsten Naturwundern Spaniens. Neben
-                        spektakulären Felsformationen gibt es hier auch eine der größten bekannten Stalagmiten der Welt.
+                    <p>Die Tropfsteinhöhlen von Nerja gehören zu den beeindruckendsten Naturwundern Spaniens.
+                        Neben
+                        spektakulären Felsformationen gibt es hier auch eine der größten bekannten Stalagmiten
+                        der Welt.
                         Die Höhlen bieten einen Einblick in prähistorische Kunst und werden für besondere
                         Veranstaltungen wie Konzerte genutzt. Ein Muss für jeden Besucher!</p>
                 </div>
@@ -386,9 +425,12 @@
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Balcón de Europa (Nerja)</h3>
-                    <p>Diese ikonische Panoramaplattform bietet einen atemberaubenden Blick auf das Mittelmeer und die
-                        umliegenden Strände. Ursprünglich eine Festung, wurde sie im 19. Jahrhundert in eine Promenade
-                        umgewandelt. Der Ort ist perfekt für romantische Spaziergänge und unvergessliche Fotos!</p>
+                    <p>Diese ikonische Panoramaplattform bietet einen atemberaubenden Blick auf das Mittelmeer
+                        und die
+                        umliegenden Strände. Ursprünglich eine Festung, wurde sie im 19. Jahrhundert in eine
+                        Promenade
+                        umgewandelt. Der Ort ist perfekt für romantische Spaziergänge und unvergessliche Fotos!
+                    </p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
                     <img src="img/Fotos/Infos/Balcon_de_Europa.jpeg">
@@ -400,16 +442,20 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Iglesia El Salvador (Nerja)</h3>
-                    <p>Diese kleine, charmante Kirche aus dem 17. Jahrhundert liegt direkt am Balcón de Europa. Sie ist
-                        ein wunderbares Beispiel für den andalusischen Barockstil und ein ruhiger Ort für eine Pause
+                    <p>Diese kleine, charmante Kirche aus dem 17. Jahrhundert liegt direkt am Balcón de Europa.
+                        Sie ist
+                        ein wunderbares Beispiel für den andalusischen Barockstil und ein ruhiger Ort für eine
+                        Pause
                         während eurer Erkundungstour.</p>
                 </div>
             </div>
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Leuchtturm von Torre del Mar</h3>
-                    <p>Der Leuchtturm ist ein Wahrzeichen von Torre del Mar. Direkt an der Promenade gelegen, ist er der
-                        ideale Ort für einen entspannten Spaziergang am Meer. In der Nähe finden sich zudem einige der
+                    <p>Der Leuchtturm ist ein Wahrzeichen von Torre del Mar. Direkt an der Promenade gelegen,
+                        ist er der
+                        ideale Ort für einen entspannten Spaziergang am Meer. In der Nähe finden sich zudem
+                        einige der
                         besten Chiringuitos (Strandrestaurants) der Region.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -424,8 +470,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Cueva de Nerja</h3>
-                    <p>Die Tropfsteinhöhlen von Nerja gehören zu den beeindruckendsten Naturwundern Spaniens. Neben
-                        spektakulären Felsformationen gibt es hier auch eine der größten bekannten Stalagmiten der Welt.
+                    <p>Die Tropfsteinhöhlen von Nerja gehören zu den beeindruckendsten Naturwundern Spaniens.
+                        Neben
+                        spektakulären Felsformationen gibt es hier auch eine der größten bekannten Stalagmiten
+                        der Welt.
                         Die Höhlen bieten einen Einblick in prähistorische Kunst und werden für besondere
                         Veranstaltungen wie Konzerte genutzt. Ein Muss für jeden Besucher!</p>
                 </div>
@@ -436,9 +484,12 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Balcón de Europa (Nerja)</h3>
-                    <p>Diese ikonische Panoramaplattform bietet einen atemberaubenden Blick auf das Mittelmeer und die
-                        umliegenden Strände. Ursprünglich eine Festung, wurde sie im 19. Jahrhundert in eine Promenade
-                        umgewandelt. Der Ort ist perfekt für romantische Spaziergänge und unvergessliche Fotos!</p>
+                    <p>Diese ikonische Panoramaplattform bietet einen atemberaubenden Blick auf das Mittelmeer
+                        und die
+                        umliegenden Strände. Ursprünglich eine Festung, wurde sie im 19. Jahrhundert in eine
+                        Promenade
+                        umgewandelt. Der Ort ist perfekt für romantische Spaziergänge und unvergessliche Fotos!
+                    </p>
                 </div>
             </div>
             <div class="row Info_row">
@@ -447,8 +498,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Iglesia El Salvador (Nerja)</h3>
-                    <p>Diese kleine, charmante Kirche aus dem 17. Jahrhundert liegt direkt am Balcón de Europa. Sie ist
-                        ein wunderbares Beispiel für den andalusischen Barockstil und ein ruhiger Ort für eine Pause
+                    <p>Diese kleine, charmante Kirche aus dem 17. Jahrhundert liegt direkt am Balcón de Europa.
+                        Sie ist
+                        ein wunderbares Beispiel für den andalusischen Barockstil und ein ruhiger Ort für eine
+                        Pause
                         während eurer Erkundungstour.</p>
                 </div>
             </div>
@@ -458,8 +511,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Leuchtturm von Torre del Mar</h3>
-                    <p>Der Leuchtturm ist ein Wahrzeichen von Torre del Mar. Direkt an der Promenade gelegen, ist er der
-                        ideale Ort für einen entspannten Spaziergang am Meer. In der Nähe finden sich zudem einige der
+                    <p>Der Leuchtturm ist ein Wahrzeichen von Torre del Mar. Direkt an der Promenade gelegen,
+                        ist er der
+                        ideale Ort für einen entspannten Spaziergang am Meer. In der Nähe finden sich zudem
+                        einige der
                         besten Chiringuitos (Strandrestaurants) der Region.</p>
                 </div>
             </div>
@@ -471,16 +526,20 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Playa de Burriana (Nerja)</h3>
-                    <p>Der beliebteste Strand von Nerja bietet feinen Sand, kristallklares Wasser und eine Fülle von
-                        Aktivitäten wie Tretbootfahren, Jetski oder Beachvolleyball. Hier befinden sich auch zahlreiche
+                    <p>Der beliebteste Strand von Nerja bietet feinen Sand, kristallklares Wasser und eine Fülle
+                        von
+                        Aktivitäten wie Tretbootfahren, Jetski oder Beachvolleyball. Hier befinden sich auch
+                        zahlreiche
                         Restaurants, in denen ihr typisch spanische Spezialitäten wie Paella genießen könnt.</p>
                 </div>
             </div>
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Playa de Torre del Mar</h3>
-                    <p>Ein moderner und gepflegter Stadtstrand, der sich durch seine lange Strandpromenade auszeichnet.
-                        Hier könnt ihr nicht nur baden, sondern auch Fahrradtouren unternehmen, skaten oder in einem der
+                    <p>Ein moderner und gepflegter Stadtstrand, der sich durch seine lange Strandpromenade
+                        auszeichnet.
+                        Hier könnt ihr nicht nur baden, sondern auch Fahrradtouren unternehmen, skaten oder in
+                        einem der
                         vielen Cafés verweilen.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -493,8 +552,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Playa El Playazo (Nerja)</h3>
-                    <p>Für diejenigen, die es etwas ruhiger mögen, ist dieser weitläufige Strand ideal. Mit weniger
-                        Touristen und einer entspannteren Atmosphäre ist er perfekt für einen gemütlichen Tag am Meer.
+                    <p>Für diejenigen, die es etwas ruhiger mögen, ist dieser weitläufige Strand ideal. Mit
+                        weniger
+                        Touristen und einer entspannteren Atmosphäre ist er perfekt für einen gemütlichen Tag am
+                        Meer.
                     </p>
                 </div>
             </div>
@@ -506,8 +567,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Playa de Burriana (Nerja)</h3>
-                    <p>Der beliebteste Strand von Nerja bietet feinen Sand, kristallklares Wasser und eine Fülle von
-                        Aktivitäten wie Tretbootfahren, Jetski oder Beachvolleyball. Hier befinden sich auch zahlreiche
+                    <p>Der beliebteste Strand von Nerja bietet feinen Sand, kristallklares Wasser und eine Fülle
+                        von
+                        Aktivitäten wie Tretbootfahren, Jetski oder Beachvolleyball. Hier befinden sich auch
+                        zahlreiche
                         Restaurants, in denen ihr typisch spanische Spezialitäten wie Paella genießen könnt.</p>
                 </div>
             </div>
@@ -517,8 +580,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Playa de Torre del Mar</h3>
-                    <p>Ein moderner und gepflegter Stadtstrand, der sich durch seine lange Strandpromenade auszeichnet.
-                        Hier könnt ihr nicht nur baden, sondern auch Fahrradtouren unternehmen, skaten oder in einem der
+                    <p>Ein moderner und gepflegter Stadtstrand, der sich durch seine lange Strandpromenade
+                        auszeichnet.
+                        Hier könnt ihr nicht nur baden, sondern auch Fahrradtouren unternehmen, skaten oder in
+                        einem der
                         vielen Cafés verweilen.</p>
                 </div>
             </div>
@@ -528,8 +593,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Playa El Playazo (Nerja)</h3>
-                    <p>Für diejenigen, die es etwas ruhiger mögen, ist dieser weitläufige Strand ideal. Mit weniger
-                        Touristen und einer entspannteren Atmosphäre ist er perfekt für einen gemütlichen Tag am Meer.
+                    <p>Für diejenigen, die es etwas ruhiger mögen, ist dieser weitläufige Strand ideal. Mit
+                        weniger
+                        Touristen und einer entspannteren Atmosphäre ist er perfekt für einen gemütlichen Tag am
+                        Meer.
                     </p>
                 </div>
             </div>
@@ -541,7 +608,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>El Ingenio Shopping Center (Torre del Mar)</h3>
-                    <p>Dieses Einkaufszentrum bietet alles, was das Herz begehrt: bekannte Modeketten, eine große
+                    <p>Dieses Einkaufszentrum bietet alles, was das Herz begehrt: bekannte Modeketten, eine
+                        große
                         Auswahl an Restaurants und ein Kino. Perfekt für einen Einkaufsbummel oder einen
                         Schlechtwettertag.</p>
                 </div>
@@ -549,9 +617,11 @@
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Wochenmärkte</h3>
-                    <p>Dienstag in Nerja:<br>Hier findet ihr traditionelle Produkte wie frisches Obst und Gemüse,
+                    <p>Dienstag in Nerja:<br>Hier findet ihr traditionelle Produkte wie frisches Obst und
+                        Gemüse,
                         handgemachte Keramik, Lederwaren und Souvenirs</p>
-                    <p>Donnerstag in Torre del Mar:<br>Einer der größten Wochenmärkte der Region, auf dem ihr von
+                    <p>Donnerstag in Torre del Mar:<br>Einer der größten Wochenmärkte der Region, auf dem ihr
+                        von
                         Kleidung über Kunsthandwerk bis hin zu lokalen Spezialitäten alles findet.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -564,7 +634,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Altstadt von Nerja</h3>
-                    <p>Die charmanten engen Gassen der Altstadt sind gesäumt von Boutiquen und kleinen Läden, die
+                    <p>Die charmanten engen Gassen der Altstadt sind gesäumt von Boutiquen und kleinen Läden,
+                        die
                         Kunsthandwerk, Mode und einzigartige Andenken anbieten.
                     </p>
                 </div>
@@ -577,7 +648,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>El Ingenio Shopping Center (Torre del Mar)</h3>
-                    <p>Dieses Einkaufszentrum bietet alles, was das Herz begehrt: bekannte Modeketten, eine große
+                    <p>Dieses Einkaufszentrum bietet alles, was das Herz begehrt: bekannte Modeketten, eine
+                        große
                         Auswahl an Restaurants und ein Kino. Perfekt für einen Einkaufsbummel oder einen
                         Schlechtwettertag.</p>
                 </div>
@@ -588,9 +660,11 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Wochenmärkte</h3>
-                    <p>Dienstag in Nerja:<br>Hier findet ihr traditionelle Produkte wie frisches Obst und Gemüse,
+                    <p>Dienstag in Nerja:<br>Hier findet ihr traditionelle Produkte wie frisches Obst und
+                        Gemüse,
                         handgemachte Keramik, Lederwaren und Souvenirs</p>
-                    <p>Donnerstag in Torre del Mar:<br>Einer der größten Wochenmärkte der Region, auf dem ihr von
+                    <p>Donnerstag in Torre del Mar:<br>Einer der größten Wochenmärkte der Region, auf dem ihr
+                        von
                         Kleidung über Kunsthandwerk bis hin zu lokalen Spezialitäten alles findet.</p>
                 </div>
             </div>
@@ -600,7 +674,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Altstadt von Nerja</h3>
-                    <p>Die charmanten engen Gassen der Altstadt sind gesäumt von Boutiquen und kleinen Läden, die
+                    <p>Die charmanten engen Gassen der Altstadt sind gesäumt von Boutiquen und kleinen Läden,
+                        die
                         Kunsthandwerk, Mode und einzigartige Andenken anbieten.
                     </p>
                 </div>
@@ -613,16 +688,20 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Chiringuitos (Strandrestaurants)</h3>
-                    <p>Die Strandbars an der Küste sind ein Highlight der andalusischen Küche. Probiert die berühmten
-                        Espetos, bei denen frische Sardinen am Spieß gegrillt werden, oder genießt fangfrischen Fisch
+                    <p>Die Strandbars an der Küste sind ein Highlight der andalusischen Küche. Probiert die
+                        berühmten
+                        Espetos, bei denen frische Sardinen am Spieß gegrillt werden, oder genießt fangfrischen
+                        Fisch
                         direkt am Meer.</p>
                 </div>
             </div>
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Tapas-Tour</h3>
-                    <p>In Nerja und Torre del Mar gibt es zahlreiche Tapas-Bars, in denen ihr die typisch spanischen
-                        Häppchen probieren könnt. Ein Geheimtipp: In vielen Bars ist eine Tapa kostenlos, wenn ihr ein
+                    <p>In Nerja und Torre del Mar gibt es zahlreiche Tapas-Bars, in denen ihr die typisch
+                        spanischen
+                        Häppchen probieren könnt. Ein Geheimtipp: In vielen Bars ist eine Tapa kostenlos, wenn
+                        ihr ein
                         Getränk bestellt!</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -635,8 +714,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Eisdielen</h3>
-                    <p>Gönnt euch an heißen Tagen ein handgemachtes Eis. Besonders empfehlenswert sind die Heladería
-                        Sanoni in Torre del Mar und La Ibense in Nerja, die für ihre kreativen Geschmacksrichtungen
+                    <p>Gönnt euch an heißen Tagen ein handgemachtes Eis. Besonders empfehlenswert sind die
+                        Heladería
+                        Sanoni in Torre del Mar und La Ibense in Nerja, die für ihre kreativen
+                        Geschmacksrichtungen
                         bekannt sind.</p>
                 </div>
             </div>
@@ -648,8 +729,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Chiringuitos (Strandrestaurants)</h3>
-                    <p>Die Strandbars an der Küste sind ein Highlight der andalusischen Küche. Probiert die berühmten
-                        Espetos, bei denen frische Sardinen am Spieß gegrillt werden, oder genießt fangfrischen Fisch
+                    <p>Die Strandbars an der Küste sind ein Highlight der andalusischen Küche. Probiert die
+                        berühmten
+                        Espetos, bei denen frische Sardinen am Spieß gegrillt werden, oder genießt fangfrischen
+                        Fisch
                         direkt am Meer.</p>
                 </div>
             </div>
@@ -659,8 +742,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Tapas-Tour</h3>
-                    <p>In Nerja und Torre del Mar gibt es zahlreiche Tapas-Bars, in denen ihr die typisch spanischen
-                        Häppchen probieren könnt. Ein Geheimtipp: In vielen Bars ist eine Tapa kostenlos, wenn ihr ein
+                    <p>In Nerja und Torre del Mar gibt es zahlreiche Tapas-Bars, in denen ihr die typisch
+                        spanischen
+                        Häppchen probieren könnt. Ein Geheimtipp: In vielen Bars ist eine Tapa kostenlos, wenn
+                        ihr ein
                         Getränk bestellt!</p>
                 </div>
             </div>
@@ -670,8 +755,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Eisdielen</h3>
-                    <p>Gönnt euch an heißen Tagen ein handgemachtes Eis. Besonders empfehlenswert sind die Heladería
-                        Sanoni in Torre del Mar und La Ibense in Nerja, die für ihre kreativen Geschmacksrichtungen
+                    <p>Gönnt euch an heißen Tagen ein handgemachtes Eis. Besonders empfehlenswert sind die
+                        Heladería
+                        Sanoni in Torre del Mar und La Ibense in Nerja, die für ihre kreativen
+                        Geschmacksrichtungen
                         bekannt sind.</p>
                 </div>
             </div>
@@ -683,15 +770,19 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Bootsausflüge und Kajaktouren</h3>
-                    <p>Entdeckt die Schönheit der Küste aus einer neuen Perspektive! In Nerja könnt ihr Kajaks mieten
-                        oder an einer geführten Tour teilnehmen, um versteckte Buchten und Meereshöhlen zu erkunden.</p>
+                    <p>Entdeckt die Schönheit der Küste aus einer neuen Perspektive! In Nerja könnt ihr Kajaks
+                        mieten
+                        oder an einer geführten Tour teilnehmen, um versteckte Buchten und Meereshöhlen zu
+                        erkunden.</p>
                 </div>
             </div>
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Wandern in den Bergen</h3>
-                    <p>Die Region um Nerja und Torre del Mar ist ein Paradies für Naturliebhaber. Im Naturpark Sierras
-                        de Tejeda, Almijara y Alhama findet ihr Wanderwege mit spektakulären Ausblicken auf die Küste
+                    <p>Die Region um Nerja und Torre del Mar ist ein Paradies für Naturliebhaber. Im Naturpark
+                        Sierras
+                        de Tejeda, Almijara y Alhama findet ihr Wanderwege mit spektakulären Ausblicken auf die
+                        Küste
                         und die Berge.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -704,14 +795,16 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Fahrradfahren entlang der Küste</h3>
-                    <p>Leiht euch Fahrräder und erkundet die Umgebung auf zwei Rädern. Die Promenade in Torre del Mar
+                    <p>Leiht euch Fahrräder und erkundet die Umgebung auf zwei Rädern. Die Promenade in Torre
+                        del Mar
                         ist ideal für eine entspannte Tour mit Blick aufs Meer.</p>
                 </div>
             </div>
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Paddle-Surfen</h3>
-                    <p>Für die Sportlichen gibt es zahlreiche Möglichkeiten, das Paddle-Surfen zu lernen oder sich ein
+                    <p>Für die Sportlichen gibt es zahlreiche Möglichkeiten, das Paddle-Surfen zu lernen oder
+                        sich ein
                         Brett zu mieten.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -726,8 +819,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Bootsausflüge und Kajaktouren</h3>
-                    <p>Entdeckt die Schönheit der Küste aus einer neuen Perspektive! In Nerja könnt ihr Kajaks mieten
-                        oder an einer geführten Tour teilnehmen, um versteckte Buchten und Meereshöhlen zu erkunden.</p>
+                    <p>Entdeckt die Schönheit der Küste aus einer neuen Perspektive! In Nerja könnt ihr Kajaks
+                        mieten
+                        oder an einer geführten Tour teilnehmen, um versteckte Buchten und Meereshöhlen zu
+                        erkunden.</p>
                 </div>
             </div>
             <div class="row Info_row">
@@ -736,8 +831,10 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Wandern in den Bergen</h3>
-                    <p>Die Region um Nerja und Torre del Mar ist ein Paradies für Naturliebhaber. Im Naturpark Sierras
-                        de Tejeda, Almijara y Alhama findet ihr Wanderwege mit spektakulären Ausblicken auf die Küste
+                    <p>Die Region um Nerja und Torre del Mar ist ein Paradies für Naturliebhaber. Im Naturpark
+                        Sierras
+                        de Tejeda, Almijara y Alhama findet ihr Wanderwege mit spektakulären Ausblicken auf die
+                        Küste
                         und die Berge.</p>
                 </div>
             </div>
@@ -747,7 +844,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Fahrradfahren entlang der Küste</h3>
-                    <p>Leiht euch Fahrräder und erkundet die Umgebung auf zwei Rädern. Die Promenade in Torre del Mar
+                    <p>Leiht euch Fahrräder und erkundet die Umgebung auf zwei Rädern. Die Promenade in Torre
+                        del Mar
                         ist ideal für eine entspannte Tour mit Blick aufs Meer.</p>
                 </div>
             </div>
@@ -757,7 +855,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Paddle-Surfen</h3>
-                    <p>Für die Sportlichen gibt es zahlreiche Möglichkeiten, das Paddle-Surfen zu lernen oder sich ein
+                    <p>Für die Sportlichen gibt es zahlreiche Möglichkeiten, das Paddle-Surfen zu lernen oder
+                        sich ein
                         Brett zu mieten.</p>
                 </div>
             </div>
@@ -769,14 +868,16 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Strandbars und Lounges</h3>
-                    <p>Genießt den Abend in einer der vielen Bars direkt am Strand. Ob ein entspannter Cocktail oder
+                    <p>Genießt den Abend in einer der vielen Bars direkt am Strand. Ob ein entspannter Cocktail
+                        oder
                         lebhafte Musik – hier ist für jeden etwas dabei.</p>
                 </div>
             </div>
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Clubs in Torre del Mar</h3>
-                    <p>Die Stadt hat ein lebendiges Nachtleben, besonders entlang der Promenade. Hier könnt ihr bis in
+                    <p>Die Stadt hat ein lebendiges Nachtleben, besonders entlang der Promenade. Hier könnt ihr
+                        bis in
                         die frühen Morgenstunden tanzen.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -789,7 +890,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Flamenco-Shows</h3>
-                    <p>Erlebt die Leidenschaft des Flamenco in kleinen Veranstaltungsorten in Nerja. Die Aufführungen
+                    <p>Erlebt die Leidenschaft des Flamenco in kleinen Veranstaltungsorten in Nerja. Die
+                        Aufführungen
                         geben einen wunderbaren Einblick in die andalusische Kultur.</p>
                 </div>
             </div>
@@ -801,7 +903,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Strandbars und Lounges</h3>
-                    <p>Genießt den Abend in einer der vielen Bars direkt am Strand. Ob ein entspannter Cocktail oder
+                    <p>Genießt den Abend in einer der vielen Bars direkt am Strand. Ob ein entspannter Cocktail
+                        oder
                         lebhafte Musik – hier ist für jeden etwas dabei.</p>
                 </div>
             </div>
@@ -811,7 +914,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Clubs in Torre del Mar</h3>
-                    <p>Die Stadt hat ein lebendiges Nachtleben, besonders entlang der Promenade. Hier könnt ihr bis in
+                    <p>Die Stadt hat ein lebendiges Nachtleben, besonders entlang der Promenade. Hier könnt ihr
+                        bis in
                         die frühen Morgenstunden tanzen.</p>
                 </div>
             </div>
@@ -821,7 +925,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Flamenco-Shows</h3>
-                    <p>Erlebt die Leidenschaft des Flamenco in kleinen Veranstaltungsorten in Nerja. Die Aufführungen
+                    <p>Erlebt die Leidenschaft des Flamenco in kleinen Veranstaltungsorten in Nerja. Die
+                        Aufführungen
                         geben einen wunderbaren Einblick in die andalusische Kultur.</p>
                 </div>
             </div>
@@ -833,7 +938,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Frigiliana</h3>
-                    <p>Nur 10 Minuten von Nerja entfernt liegt dieses charmante weiße Dorf, das für seine gepflasterten
+                    <p>Nur 10 Minuten von Nerja entfernt liegt dieses charmante weiße Dorf, das für seine
+                        gepflasterten
                         Gassen und bunten Blumenkästen bekannt ist. Hier könnt ihr traditionelle andalusische
                         Architektur und wunderschöne Aussichtspunkte genießen.</p>
                 </div>
@@ -841,8 +947,10 @@
             <div class="row Info_row">
                 <div class="info_col_8 Info_Text_col">
                     <h3>Málaga</h3>
-                    <p>Die Hauptstadt der Costa del Sol liegt nur 40 Minuten entfernt und bietet eine Mischung aus
-                        Kultur, Shopping und Gastronomie. Besucht das Picasso-Museum, die Alcazaba oder genießt die
+                    <p>Die Hauptstadt der Costa del Sol liegt nur 40 Minuten entfernt und bietet eine Mischung
+                        aus
+                        Kultur, Shopping und Gastronomie. Besucht das Picasso-Museum, die Alcazaba oder genießt
+                        die
                         lebendige Atmosphäre in der Altstadt.</p>
                 </div>
                 <div class="info_col_4 Info_Foto_col">
@@ -857,7 +965,8 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Frigiliana</h3>
-                    <p>Nur 10 Minuten von Nerja entfernt liegt dieses charmante weiße Dorf, das für seine gepflasterten
+                    <p>Nur 10 Minuten von Nerja entfernt liegt dieses charmante weiße Dorf, das für seine
+                        gepflasterten
                         Gassen und bunten Blumenkästen bekannt ist. Hier könnt ihr traditionelle andalusische
                         Architektur und wunderschöne Aussichtspunkte genießen.</p>
                 </div>
@@ -868,14 +977,16 @@
                 </div>
                 <div class="info_col_8 Info_Text_col">
                     <h3>Málaga</h3>
-                    <p>Die Hauptstadt der Costa del Sol liegt nur 40 Minuten entfernt und bietet eine Mischung aus
-                        Kultur, Shopping und Gastronomie. Besucht das Picasso-Museum, die Alcazaba oder genießt die
+                    <p>Die Hauptstadt der Costa del Sol liegt nur 40 Minuten entfernt und bietet eine Mischung
+                        aus
+                        Kultur, Shopping und Gastronomie. Besucht das Picasso-Museum, die Alcazaba oder genießt
+                        die
                         lebendige Atmosphäre in der Altstadt.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="segment_06" class="Full_Size">
+    <div id="segment_07">
         <div class="SegmentHeader">
             <img class="flower" src="img/Flower.png" width="40px" height="auto">
             <h1>Ansprechpartner</h1>
@@ -896,13 +1007,13 @@
                         <img src="img/Ansprechpartner/Angela.jpeg">
                     </div>
                     <div class="partner_text">
-                        <h4>Angela Marozov</h4>
+                        <h4>Angela Morozov</h4>
                         <p>Trauzeugin</p>
                     </div>
                 </div>
                 <div class="p_col">
                     <div class="partner_col">
-                        <img src="img/Ansprechpartner/Ivan.jpeg">
+                        <img src="img/Ansprechpartner/Stella.jpeg">
                     </div>
                     <div class="partner_text">
                         <h4>Stella Seng</h4>
@@ -930,7 +1041,84 @@
             </div>
         </div>
     </div>
-    <div id="segment_07" class="Full_Size"></div>
+    <div id="segment_08" class="Full_Size">
+        <div class="SegmentHeader">
+            <img class="flower" src="img/Flower.png" width="40px" height="auto">
+            <h1>FAQs</h1>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_1">
+                <i class="Chevron"></i>
+                <h3>Gibt es einen Dresscode?</h3>
+            </div>
+            <div class="answer" id="answer_1">
+                <p>Wir möchten, dass ihr euch alle wohl fühlt! Zieht euch schick an, aber bedenkt, dass es ziemlich warm
+                    werden könnte. Wir bitten euch nur darum, kein Weiß zu tragen.</p>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_2">
+                <i class="Chevron"></i>
+                <h3>Kann ich jemanden mitbringen?</h3>
+            </div>
+            <div class="answer" id="answer_2">
+                <p>Wir möchten den wohl schönsten Tag unseres Lebens mit den engsten Leuten teilen. Alle Personen, die
+                    wir gerne mit uns hätten, erhalten eine persönliche Einladung und/oder werden namentlich genannt.
+                </p>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_3">
+                <i class="Chevron"></i>
+                <h3>Bis wann muss ich eine Rückmeldung geben, ob ich kommen kann?</h3>
+            </div>
+            <div class="answer" id="answer_3">
+                <p>Bitte gebt uns eine Antwort bis spätestens 31. Mai 2025, damit wir alles so gut wie möglich planen
+                    und einkalkulieren können. Teilt uns eure Antwort über WhatsApp mit.</p>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_4">
+                <i class="Chevron"></i>
+                <h3>Wann und wo findet die Trauung statt?</h3>
+            </div>
+            <div class="answer" id="answer_4">
+                <p>Die Trauung findet in La Terraza de Mangoa, Torre del Mar um 16:00 Uhr statt.
+                    Wir bitten euch darum, ca. 30 min früher zu
+                    kommen, damit die Zeremonie pünktlich beginnen kann.</p>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_5">
+                <i class="Chevron"></i>
+                <h3>Findet die Hochzeit ohne Kinder statt?</h3>
+            </div>
+            <div class="answer" id="answer_5">
+                <p>Eure Kinder sind bei uns herzlich Willkommen, da sie genau so zu unserer Familie gehören.</p>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_6">
+                <i class="Chevron"></i>
+                <h3>Ich habe eine Allergie/Unverträglichkeit. Gibt es Alternativen?</h3>
+            </div>
+            <div class="answer" id="answer_6">
+                <p>Bitte gebt uns Bescheid, solltet ihr aufgrund einer Allergie oder Unverträglichkeit besondere
+                    Mahlzeiten benötigen. Vegetarische und vegane Gerichte wird es auf der Hochzeit geben.</p>
+            </div>
+        </div>
+        <div class="faq_container">
+            <div class="question" id="question_7">
+                <i class="Chevron"></i>
+                <h3>Was könnten wir euch schenken?</h3>
+            </div>
+            <div class="answer" id="answer_7">
+                <p>Wir schätzen es sehr, dass ihr zu unserer Hochzeit nach Spanien kommt, daher ist eure Präsenz
+                    Geschenk genug! Solltet ihr uns dennoch eine Freude bereiten wollen, hilft uns ein kleiner
+                    finanzieller Beitrag für unseren gemeinsamen Start ins Eheleben.</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

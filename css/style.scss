@@ -16,7 +16,8 @@ html {
 }
 
 body {
-
+    //height: 100vh;
+    //overflow: hidden;
     font-style: normal !important;
     font-family: "Lexend", serif !important;
     font-optical-sizing: auto !important;
@@ -31,19 +32,11 @@ body {
 #segment_03 {
     height: 100vh;
     width: 100%;
-    background-image: url(../img/Beach_Background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
     position: relative;
     z-index: -3;
 }
 
 #segment_05 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/sg_06_bg_mobile.jpg');
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: center;
-    color: #fff;
 
     .img_nav {
         span {
@@ -58,6 +51,10 @@ body {
             }
         }
     }
+}
+
+#segment_07 {
+    margin-bottom: 50px;
 }
 
 .whitebackground {
@@ -95,7 +92,7 @@ body {
         z-index: 0;
         width: 2px;
         height: 100%;
-        margin-left: 43.5px;
+        margin-left: 11.5px;
         background-color: #e3cec9;
         ;
     }
@@ -107,7 +104,7 @@ body {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        width: 90px;
+        width: 25px;
         height: 25px;
         -webkit-box-pack: center;
         -webkit-justify-content: center;
@@ -145,13 +142,13 @@ body {
 }
 
 #segment_01 {
-    background-image: url(../img/LaTerraza_Mangoa.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Default_BG.jpeg');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: center;
 }
 
 .WebsiteHeader {
-    background-color: rgba($color: #000, $alpha: 0.4);
     width: 100%;
     height: 100vh;
 
@@ -671,9 +668,12 @@ body {
 }
 
 .Login_Segment {
+    display: flex;
+    position: fixed;
+    z-index: 10;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/Login_Background.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Login_Background.jpeg');
     background-repeat: no-repeat;
     background-size: 100% auto;
 
@@ -704,6 +704,113 @@ body {
                 background-color: #d3b4ab;
             }
         }
+
+        p {
+            display: none;
+            font-family: "Lexend", serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-size: 1.1em;
+            color: red;
+            margin-top: 30px;
+        }
+    }
+}
+
+.hide_Login_Segment {
+    display: none;
+}
+
+.location_Segment {
+    margin-bottom: 100px;
+}
+
+.location_container {
+    max-width: 1300px !important;
+
+    .location_row {
+        padding-top: 50px;
+
+        .l_col {
+            padding: 5px;
+            margin-bottom: 20px
+        }
+
+        iframe {
+            display: block;
+            height: 450px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.faq_container {
+    max-width: 960px;
+    padding: 25px 25px 0 25px;
+    margin: 0 auto;
+    border-bottom: solid 1px;
+
+    .question {
+        display: flex;
+        cursor: pointer;
+
+        h3 {
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.75em;
+            line-height: 2em;
+        }
+
+        .Chevron {
+            position: relative;
+            display: block;
+            height: 50px;
+            flex: 0 0 50px;
+
+            &::before {
+                position: absolute;
+                display: block;
+                content: "";
+                border: 15px solid transparent;
+                top: 22px;
+                border-top-color: #808080;
+            }
+
+            &::after {
+                position: absolute;
+                display: block;
+                content: "";
+                border: 15px solid transparent;
+                top: 18px;
+                border-top-color: #fff;
+            }
+        }
+    }
+
+    .answer {
+        display: none;
+        transition: .2s ease-in-out;
+
+        p {
+            font-size: 1.1em;
+        }
+    }
+
+    .active {
+        display: block !important;
     }
 }
 
@@ -758,6 +865,10 @@ body {
         .img-box {
             padding: 2px;
         }
+
+        .overlay {
+            padding: 2px;
+        }
     }
 
     .img_nav {
@@ -799,6 +910,46 @@ body {
 
     .partner_container {
         max-width: 720px !important;
+    }
+
+    .location_container {
+        max-width: 960px !important;
+    }
+
+    .faq_container {
+        max-width: 760px;
+
+        .question {
+
+            h3 {
+                font-size: 1.25em;
+            }
+
+            .Chevron {
+                position: relative;
+                display: block;
+                height: 50px;
+                flex: 0 0 35px;
+
+                &::before {
+                    border: 10px solid transparent;
+                    top: 16px;
+                    border-top-color: #808080;
+                }
+
+                &::after {
+                    border: 10px solid transparent;
+                    top: 13px;
+                    border-top-color: #fff;
+                }
+            }
+        }
+
+        .answer {
+            p {
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
@@ -908,6 +1059,10 @@ body {
     .Info_container_mobile {
         display: none;
     }
+
+    .location_container {
+        max-width: 540px !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1006,6 +1161,59 @@ body {
                 p {
                     font-size: 0.8em;
                 }
+            }
+        }
+    }
+
+    .location_container {
+
+        .location_row {
+
+            h2 {
+                font-size: 1.3em;
+            }
+
+            iframe {
+                display: block;
+                height: 350px;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .faq_container {
+        max-width: 360px;
+
+        .question {
+
+            h3 {
+                font-size: 1.1em;
+            }
+
+            .Chevron {
+                position: relative;
+                display: block;
+                height: 30px;
+                flex: 0 0 35px;
+
+                &::before {
+                    border: 10px solid transparent;
+                    top: 16px;
+                    border-top-color: #808080;
+                }
+
+                &::after {
+                    border: 10px solid transparent;
+                    top: 13px;
+                    border-top-color: #fff;
+                }
+            }
+        }
+
+        .answer {
+            p {
+                font-size: 0.8em;
             }
         }
     }

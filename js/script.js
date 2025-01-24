@@ -7,6 +7,7 @@ $(document).ready(function () {
     var offset5 = $('#segment_05').offset().top;
     var offset6 = $('#segment_06').offset().top;
     var offset7 = $('#segment_07').offset().top;
+    var offset8 = $('#segment_08').offset().top;
 
     const oneDay = 24 * 60 * 60 * 1000;
     const firstDate = new Date();
@@ -16,7 +17,7 @@ $(document).ready(function () {
 
     $("#countdown").text(diffDays + " Tage bis zur Hochzeit")
     $(window).scroll(function () {
-        var scrollPos = $(document).scrollTop() + $(window).height() / 3;
+        var scrollPos = $(document).scrollTop() + 300;
         if (scrollPos >= offset1 && scrollPos < offset2) {
             $(".navlink").each(function () {
                 $(this).removeClass("active");
@@ -53,11 +54,17 @@ $(document).ready(function () {
             });
             $('#click6').addClass("active")
         }
-        if (scrollPos >= offset7) {
+        if (scrollPos >= offset7 && scrollPos < offset8) {
             $(".navlink").each(function () {
                 $(this).removeClass("active");
             });
             $('#click7').addClass("active")
+        }
+        if (scrollPos >= offset8) {
+            $(".navlink").each(function () {
+                $(this).removeClass("active");
+            });
+            $('#click8').addClass("active")
         }
     });
     $(".Selector_Foto").on("click", function () {
@@ -90,5 +97,9 @@ $(document).ready(function () {
             var id_String = "#" + $(this).attr('id').split("_")[0] + ".Info_container_mobile"
             $(id_String).css("display", "block")
         }
+    });
+    $(".question").on("click", function () {
+        var currentAnswer = "#answer_" + $(this).attr('id').split("_")[1]
+        $(currentAnswer).toggle()
     });
 });
