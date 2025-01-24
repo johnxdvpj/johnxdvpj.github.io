@@ -580,7 +580,8 @@ body {
     .Housing .img-box {
       padding: 2px; }
     .Housing .overlay {
-      padding: 2px; }
+      padding: 2px;
+      font-size: 0.8em; }
 
   .img_nav span {
     margin: 0 5px;
@@ -727,6 +728,9 @@ body {
     width: 100%; }
     #segment_03 .whitebackground .schedule-box .schedule-row {
       padding-top: 30px; }
+
+  .Housing .overlay {
+    font-size: 0.6em; }
 
   .partner_col {
     height: 120px;
